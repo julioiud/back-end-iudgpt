@@ -11,10 +11,12 @@ dotenv.config()
     cors({
         origin: '*',
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD', 'PATCH', 'TRACE', 'CONNECT'], // Permite métodos
-        allowedHeaders: ['Content-Type', 'Authorization', 'token'], // Cabeceras permitidas
+        allowedHeaders: ['Content-Type', 'Authorization', 'token', 'secret'], // Cabeceras permitidas
         credentials: true
     })
 )
+
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 

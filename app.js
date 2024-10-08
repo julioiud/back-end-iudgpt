@@ -7,9 +7,12 @@ dotenv.config()
 
  //mongoConnection()
 
-app.use(
+ app.use(
     cors({
-        origin: '*'
+        origin: '*',
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Permite métodos
+        allowedHeaders: ['Content-Type', 'Authorization', 'token'], // Cabeceras permitidas
+        credentials: true
     })
 )
 app.use(express.json())

@@ -10,7 +10,7 @@ dotenv.config()
  app.use(
     cors({
         origin: '*',
-        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Permite métodos
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD', 'PATCH', 'TRACE', 'CONNECT'], // Permite métodos
         allowedHeaders: ['Content-Type', 'Authorization', 'token'], // Cabeceras permitidas
         credentials: true
     })

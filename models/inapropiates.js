@@ -7,7 +7,12 @@ const badWords = [
     'marica',
     'pirobo',
     'vales mondá',
-    'monda'
+    'monda',
+    'verga',
+    'jopo',
+    'culo',
+    'chucha',
+    'culeo'
 ]
 
 module.exports = {
